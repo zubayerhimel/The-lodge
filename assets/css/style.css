@@ -23,14 +23,35 @@ body {
   background-repeat: no-repeat;
 }
 
+.cardProfile {
+  border-radius: 15px;
+  color: #1e88e5;
+}
+
+.cardProfile:hover {
+  background-color: #1e88e5;
+  color: white;
+}
+
 .cardHome {
   margin-top: 10rem;
   -webkit-box-shadow: 3px 7px 44px -4px #c7c1c7;
   box-shadow: 3px 7px 44px -4px #c3a5f3;
 }
 
-a[href^="http"] {
-  border-bottom: 1px solid;
+.memberName {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.title {
+  color: #6a50b8;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  display: inline-block;
+  border-bottom: 2px dashed #6a50b8;
+  text-shadow: 0px 6px 9px #969696;
 }
 
 ul .btn-flat {
@@ -39,15 +60,15 @@ ul .btn-flat {
   text-transform: none;
 }
 
-#signin:hover {
+#debit:hover {
   border-bottom: 2px solid #6a50b8;
 }
 
-#register:hover {
+#summary:hover {
   border-bottom: 2px solid #6a50b8;
 }
 
-#donor:hover {
+#members_list:hover {
   border-bottom: 2px solid #6a50b8;
 }
 
@@ -66,7 +87,9 @@ ul .btn-flat {
 }
 
 thead {
-  color: #9a67f3;
+  color: white;
+  font-weight: 600;
+  background-color: black;
 }
 
 .scrollable {
@@ -77,6 +100,15 @@ thead {
 
 .rounded {
   border-radius: 10px;
+}
+
+.btn {
+  font-weight: 600;
+  text-transform: none;
+}
+
+.btnRounded {
+  border-radius: 5px;
 }
 
 .credentialCard {
@@ -96,20 +128,6 @@ thead {
 
 .input-field .prefix.active {
   color: #6a50b8 !important;
-}
-
-.btnRounded {
-  border-radius: 5px;
-}
-
-.btn {
-  font-weight: 600;
-  color: #ffffff;
-  text-transform: none;
-}
-
-.title {
-  color: #6a50b8;
 }
 
 @media only screen and (max-width: 540px) {

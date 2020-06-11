@@ -26,15 +26,15 @@
           </a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li>
-              <a href="#donorList" class="btn-flat" id="donor">Donor</a>
-            </li>
-            <li>
-              <a href="signin.html" class="btn-flat" id="signin">SignIn</a>
-            </li>
-            <li>
-              <a href="register.html" class="btn-flat" id="register"
-                >Register</a
+              <a href="members.html" class="btn-flat" id="members_list"
+                >Members List</a
               >
+            </li>
+            <li>
+              <a href="debit.html" class="btn-flat" id="debit">Debit</a>
+            </li>
+            <li>
+              <a href="summary.html" class="btn-flat" id="summary">Summary</a>
             </li>
           </ul>
         </div>
@@ -49,50 +49,51 @@
     <main>
       <div class="container">
         <div class="section">
-          <div class="center-align">
-            <h4 class="title">Members List</h4>
-          </div>
-          <br />
           <div class="row">
-            <!-- MASUD AHMED -->
-            <a href="">
-              <div class="col s12 m5 l4">
-                <div class="card cardProfile hoverable center-align">
-                  <div class="card-content">
-                    <span class="memberName">Masud Ahmed</span>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <!-- JAHANGIR HOSSAIN -->
-            <a href="">
-              <div class="col s12 m5 l4">
-                <div class="card cardProfile hoverable center-align">
-                  <div class="card-content">
-                    <span class="memberName">Jahangir Hossain</span>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <!-- ANONYMOUS -->
-            <a href="">
-              <div class="col s12 m5 l4">
-                <div class="card cardProfile hoverable center-align">
-                  <div class="card-content">
-                    <span class="memberName">Jahangir Hossain</span>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="">
-              <div class="col s12 m5 l4">
-                <div class="card cardProfile hoverable center-align">
-                  <div class="card-content">
-                    <span class="memberName">Jahangir Hossain</span>
-                  </div>
-                </div>
-              </div>
-            </a>
+            <div class="right">
+              <a
+                class="waves-effect waves-light btn btnRounded blue"
+                onclick="window.print()"
+                ><i class="material-icons right">local_printshop</i>Print</a
+              >
+            </div>
+            <div class="center-align">
+              <h4 class="title">Masud Ahmed</h4>
+            </div>
+            <br /><br />
+
+            <div class="row">
+              <table class="centered striped">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Through</th>
+                    <th>Paid</th>
+                    <th>Total Paid</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>25-05-2020</td>
+                    <td>Cash</td>
+                    <td>20,000</td>
+                    <td>20,000</td>
+                  </tr>
+                  <tr>
+                    <td>30-05-2020</td>
+                    <td>Cash</td>
+                    <td>10,000</td>
+                    <td>30,000</td>
+                  </tr>
+                  <tr>
+                    <td>Jonathan</td>
+                    <td>Lollipop</td>
+                    <td>$7.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
