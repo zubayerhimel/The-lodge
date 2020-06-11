@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+// GLOBAL COLOR
+
+$primaryColor: #6a50b8;
+$secondaryColor: #1e88e5;
+
+// BASE ELEMENTS
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Google Sans";
+}
+
+.menu {
+  color: $primaryColor;
+}
+
+#mainHome {
+  background: url(../img/cool-background.png);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cardHome {
+  margin-top: 10rem;
+  -webkit-box-shadow: 3px 7px 44px -4px rgba(199, 193, 199, 1);
+  -moz-box-shadow: 3px 7px 44px -4px rgba(199, 193, 199, 1);
+  box-shadow: 3px 7px 44px -4px rgb(195, 165, 243);
+}
+a[href^="http"] {
+  border-bottom: 1px solid;
+}
+
+ul {
+  .btn-flat {
+    font-weight: 600;
+    color: $primaryColor;
+    text-transform: none;
+  }
+}
+
+#signin:hover {
+  border-bottom: 2px solid $primaryColor;
+}
+#register:hover {
+  border-bottom: 2px solid $primaryColor;
+}
+#donor:hover {
+  border-bottom: 2px solid $primaryColor;
+}
+
+.icon {
+  font-size: 5rem;
+  border: 1px solid $secondaryColor;
+  border-radius: 50%;
+  color: $secondaryColor;
+  -webkit-box-shadow: -1px 10px 30px 15px rgba(204, 200, 204, 0.73);
+  -moz-box-shadow: -1px 10px 30px 15px rgba(204, 200, 204, 0.73);
+  box-shadow: -1px 10px 30px 15px rgba(204, 200, 204, 0.73);
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+thead {
+  color: #9a67f3;
+}
+
+.scrollable {
+  width: auto;
+  height: 50rem;
+  overflow-y: scroll;
+}
+
+.rounded {
+  border-radius: 10px;
+}
+.credentialCard {
+  margin-top: 10%;
+}
+
+.input-field input:focus + label {
+  color: $primaryColor !important;
+}
+/* label underline focus color */
+.row .input-field input:focus {
+  border-bottom: 1px solid $primaryColor !important;
+  box-shadow: 0 1px 0 0 $primaryColor !important;
+}
+
+.input-field .prefix.active {
+  color: $primaryColor !important;
+}
+.btnRounded {
+  border-radius: 5px;
+}
+.btn {
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: none;
+}
+
+.title {
+  color: $primaryColor;
+}
+
+@media only screen and (max-width: 540px) {
+  #logo {
+    display: none;
+  }
+}
