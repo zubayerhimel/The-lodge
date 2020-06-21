@@ -4,6 +4,7 @@
 
 $primaryColor: #6a50b8;
 $secondaryColor: #1e88e5;
+$tertiaryColor: #fc5c04;
 
 // BASE ELEMENTS
 html {
@@ -15,7 +16,10 @@ body {
   box-sizing: border-box;
   font-family: "Google Sans";
 }
-
+.customContainer {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
 .menu {
   color: $primaryColor;
 }
@@ -38,7 +42,7 @@ body {
 }
 
 .cardHome {
-  margin-top: 10rem;
+  margin-top: 8rem;
   -webkit-box-shadow: 3px 7px 44px -4px rgba(199, 193, 199, 1);
   -moz-box-shadow: 3px 7px 44px -4px rgba(199, 193, 199, 1);
   box-shadow: 3px 7px 44px -4px rgb(195, 165, 243);
@@ -48,53 +52,30 @@ body {
   font-size: 1.5rem;
   font-weight: 600;
 }
-
+.homeImg {
+  margin-left: 12px;
+}
 .title {
   color: $primaryColor;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.2em;
   display: inline-block;
-  border-bottom: 2px dashed $primaryColor;
   text-shadow: 0px 6px 9px rgba(150, 150, 150, 1);
+}
+.subTitle {
+  color: $tertiaryColor;
 }
 
 ul {
   .btn-flat {
     font-weight: 600;
-    color: $primaryColor;
-    text-transform: none;
-  }
-}
-
-#debit:hover {
-  border-bottom: 2px solid $primaryColor;
-}
-#summary:hover {
-  border-bottom: 2px solid $primaryColor;
-}
-#members_list:hover {
-  border-bottom: 2px solid $primaryColor;
-}
-
-.icon {
-  font-size: 5rem;
-  border: 1px solid $secondaryColor;
-  border-radius: 50%;
-  color: $secondaryColor;
-  -webkit-box-shadow: -1px 10px 30px 15px rgba(204, 200, 204, 0.73);
-  -moz-box-shadow: -1px 10px 30px 15px rgba(204, 200, 204, 0.73);
-  box-shadow: -1px 10px 30px 15px rgba(204, 200, 204, 0.73);
-
-  &:hover {
-    box-shadow: none;
   }
 }
 
 thead {
-  color: white;
-  font-weight: 600;
-  background-color: rgb(0, 0, 0);
+  color: $secondaryColor;
+  font-weight: 900;
 }
 
 .scrollable {
