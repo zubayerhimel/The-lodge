@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donate Plasma</title>
+    <title>The Lodge</title>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -20,14 +20,14 @@
     <header>
       <nav class="nav-extended nav-fixed transparent z-depth-1">
         <div class="nav-wrapper">
-          <a href="index.html" id="logo">Donate Plasma</a>
+          <a href="members.html" class="brand-logo" id="logo">The Lodge</a>
           <a href="#" class="sidenav-trigger menu" data-target="mobile-nav">
             <i class="material-icons">menu</i>
           </a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li>
               <a href="members.html" class="btn-flat green-text"
-                >মেম্বার লিস্ট<i class="material-icons left">people</i></a
+                >সদস্য তালিকা<i class="material-icons left">people</i></a
               >
             </li>
             <li>
@@ -44,16 +44,18 @@
               <a
                 class="waves-effect waves-light btn btnRounded blue"
                 onclick="window.print()"
-                ><i class="material-icons right">local_printshop</i>Print</a
+                ><i class="material-icons right">local_printshop</i>প্রিন্ট
+                করুন</a
               >
             </li>
           </ul>
         </div>
       </nav>
       <ul class="sidenav" id="mobile-nav">
-        <li><a href="#donorList">Donor</a></li>
-        <li><a href="signin.html">SignIn</a></li>
-        <li><a href="register.html">Register</a></li>
+        <li><a href="members.html">সদস্য তালিকা</a></li>
+        <li><a href="debit.html">খরচ</a></li>
+        <li><a href="index.html">বের হোন</a></li>
+        <li><a onclick="window.print()">প্রিন্ট করুন</a></li>
       </ul>
     </header>
 
@@ -83,34 +85,6 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="assets/js/plugin.js"></script>
-    <script>
-      $(function () {
-        $.getJSON("assets/data/debit.json", function () {}).done(function (
-          res
-        ) {
-          for (let index = 0; index < res.debit_info.length; index++) {
-            makeDebitTable(res.debit_info[index], index);
-          }
-        });
-      });
-
-      function makeDebitTable(data, index) {
-        let str =
-          "<div class='center'><h4 class='subTitle'>" +
-          data.criteria +
-          "</h4></div><div class='card rounded'><div class='card-content'><table class='centered striped'><thead><tr><th>তারিখ</th><th>বাবদ</th><th>টাকা</th><th>মোট টাকা</th></tr></thead>";
-
-        for (let i = 0; i < data.details.length; i++) {
-          str += "<tr><td>" + data.details[i].date + "</td>";
-          str += "<td>" + data.details[i].through + "</td>";
-          str += "<td>" + data.details[i].paid + "</td>";
-          str += "<td>" + data.details[i].total_paid + "</td></tr>";
-        }
-        str += "</table></div></div>";
-        if (index === 0) $("#table1").html(str);
-        else if (index === 1) $("#table2").html(str);
-        else $("#table3").html(str);
-      }
-    </script>
+    <script src="assets/js/debit.js"></script>
   </body>
 </html>

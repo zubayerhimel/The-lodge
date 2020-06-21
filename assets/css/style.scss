@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@700&display=swap");
 // GLOBAL COLOR
 
 $primaryColor: #6a50b8;
@@ -15,6 +14,13 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Google Sans";
+}
+#logo {
+  margin-left: 1rem;
+  font-family: "MuseoModerno", cursive;
+  background: -webkit-linear-gradient(rgb(150, 15, 228), rgb(5, 230, 192));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .customContainer {
   margin-left: 4rem;
@@ -51,6 +57,7 @@ body {
 .memberName {
   font-size: 1.5rem;
   font-weight: 600;
+  cursor: pointer;
 }
 .homeImg {
   margin-left: 12px;
@@ -111,8 +118,8 @@ thead {
   color: $primaryColor !important;
 }
 
-@media only screen and (max-width: 540px) {
-  #logo {
-    display: none;
-  }
-}
+// @media only screen and (max-width: 540px) {
+//   #logo {
+//     display: none;
+//   }
+// }
