@@ -18,7 +18,7 @@ function makeDebitTable(data, index) {
     str += "<td>" + data.details[i].paid + "</td>";
     str += "<td>" + data.details[i].total_paid + "</td></tr>";
   }
-  str += "</table></div></div>";
+  str += "</table></div></div></br>";
   if (index === 0) $("#table1").html(str);
   else if (index === 1) $("#table2").html(str);
   else $("#table3").html(str);
