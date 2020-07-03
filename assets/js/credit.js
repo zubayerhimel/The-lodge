@@ -11,7 +11,7 @@ function setMemberList(data) {
   let str = "";
   for (let i = 0; i < data.length; i++) {
     str += "<div class='col s12 m6 l3'> ";
-    str += "<div class='card cardProfile hoverable center-align'>";
+    str += "<div class='card cardProfile center-align'>";
     str += "<div class='card-content'><span id='" + data[i].id + "'";
     str += "class='memberName'>" + data[i].name + "</span>";
     str += "</div></div></div>";
