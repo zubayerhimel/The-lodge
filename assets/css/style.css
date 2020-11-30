@@ -118,4 +118,20 @@ thead {
 .input-field .prefix.active {
   color: #6a50b8 !important;
 }
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable,
+  #printable * {
+    visibility: visible;
+  }
+  #printable {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */
