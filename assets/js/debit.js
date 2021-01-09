@@ -10,7 +10,7 @@ function makeDebitTable(data, index) {
   let str =
     "<div class='center'><h4 class='subTitle'>" +
     data.criteria +
-    "</h4></div><div class='card rounded'><div class='card-content'><table class='centered striped'><thead><tr><th>তারিখ</th><th>বাবদ</th><th>জমা (৳)</th><th>মোট জমা (৳)</th></tr></thead>";
+    "</h4></div><div class='card rounded'><div class='card-content'><table class='centered striped'><thead><tr><th>তারিখ</th><th>বাবদ</th><th>খরচ (৳)</th><th>মোট খরচ (৳)</th></tr></thead>";
 
   for (let i = 0; i < data.details.length; i++) {
     str += "<tr><td>" + data.details[i].date + "</td>";
