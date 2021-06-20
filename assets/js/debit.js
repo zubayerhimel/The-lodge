@@ -24,5 +24,6 @@ function makeDebitTable(data, index) {
   else if (index === 2) $("#table3").html(str);
   else if (index === 3) $("#table4").html(str);
   else if (index === 4) $("#table5").html(str);
-  else $("#table6").html(str);
+  else if (index === 5) $("#table6").html(str);
+  else $("#table7").html(str);
 }
